@@ -8,15 +8,6 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
-  base: '/',  // ← Critical for correct paths
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name].[hash][extname]',
-        entryFileNames: 'assets/[name].[hash].js'
-      }
-    }}
+  
 
 })
